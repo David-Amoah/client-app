@@ -10,7 +10,7 @@ html, body {
   font-family: Roboto Mono;
   font-size: 13px;
   line-height: 22px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .button {
@@ -85,7 +85,6 @@ html, body {
   height: 100%;
   margin: 0 auto;
   padding: 0 150px 150px 500px;
-  overflow: scroll;
 }
 
 #chat::-webkit-scrollbar {
@@ -109,7 +108,7 @@ html, body {
   background: #ffffff;
   -webkit-box-shadow: 0px 9px 30px 0px rgba(44, 46, 73, 0.08);
           box-shadow: 0px 9px 30px 0px rgba(44, 46, 73, 0.08);
-  border-radius: 26px 26px 26px 2;
+  border-radius: 26px 26px 26px 2px;
   max-width: 80%;
   display: inline-block;
 }
@@ -219,10 +218,11 @@ html, body {
   margin-right: 1em;
 }
 
-#chat .bubble.attachment .icon {
+#chat .bubble.attachment .far {
   position: absolute;
   right: 2em;
   top: 2em;
+  font-size: 20px;
 }
 
 #chat #input {
@@ -236,9 +236,7 @@ html, body {
   border-radius: 100%;
   overflow: hidden;
   float: left;
-  position: absolute;
-  left: 2em;
-  top: 2em;
+  margin: 2em;
 }
 
 #chat #input .avatar img {
@@ -254,5 +252,11 @@ html, body {
   width: 100%;
   height: 9em;
   padding: 2.5em 2em 2em 6em;
+}
+
+@media screen and (max-width: 950px) {
+  #sidebar {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
