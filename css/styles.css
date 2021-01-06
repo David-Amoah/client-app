@@ -1,57 +1,30 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-snoothing: grayscale;
 }
 
-html, body {
+body {
   background: #f7f8fb;
   font-family: Roboto Mono;
-  font-size: 13px;
-  line-height: 22px;
-  overflow: scroll;
 }
 
-.button {
-  padding: 1em 1.5em;
-  border-radius: 0.35em;
-  text-decoration: none;
-  font-weight: 700;
-  -webkit-transition: backgorund .4s ease-in-out;
-  transition: backgorund .4s ease-in-out;
-}
-
-.button-blue {
-  background: #50bbf2;
-  color: #ffffff;
-}
-
-.button-blue:hover {
-  background: #0f8ccd;
-}
-
-.button-download {
-  background: #cedce4;
-  color: #ffffff;
-}
-
-.button-download:hover {
-  background: #8cadc0;
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 #sidebar {
-  position: fixed;
-  left: 100px;
-  top: 100px;
-  background: transparent;
-  width: 300px;
+  width: 30%;
 }
 
 #sidebar .title {
   font-size: 2.5em;
   font-weight: 400;
-  line-height: 1.35;
+  line-height: .8;
   color: #393f42;
   margin: 3em 0;
 }
@@ -63,7 +36,7 @@ html, body {
 #sidebar .info .input {
   font-size: 1.35em;
   color: #727678;
-  margin-top: 1.25em;
+  margin-top: .8em;
 }
 
 #sidebar .info .description {
@@ -80,15 +53,8 @@ html, body {
 }
 
 #chat {
-  width: 100%;
-  max-width: 1440px;
+  width: 70%;
   height: 100%;
-  margin: 0 auto;
-  padding: 0 150px 150px 500px;
-}
-
-#chat::-webkit-scrollbar {
-  display: none;
 }
 
 #chat .bubble {
@@ -225,12 +191,43 @@ html, body {
   font-size: 20px;
 }
 
-#chat #input {
+.preview img {
+  width: 50px;
+}
+
+.button {
+  padding: 1em 1.5em;
+  border-radius: 0.35em;
+  text-decoration: none;
+  font-weight: 700;
+  -webkit-transition: backgorund .4s ease-in-out;
+  transition: backgorund .4s ease-in-out;
+}
+
+.button-blue {
+  background: #50bbf2;
+  color: #ffffff;
+}
+
+.button-blue:hover {
+  background: #0f8ccd;
+}
+
+.button-download {
+  background: #cedce4;
+  color: #ffffff;
+}
+
+.button-download:hover {
+  background: #8cadc0;
+}
+
+#input {
   width: 100%;
   position: relative;
 }
 
-#chat #input .avatar {
+#input .avatar {
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -239,24 +236,18 @@ html, body {
   margin: 2em;
 }
 
-#chat #input .avatar img {
-  height: 100%;
+#input .avatar img {
+  width: 100%;
 }
 
-#chat #input textarea {
+#input textarea {
   background: #ffffff;
   -webkit-box-shadow: 0px 9px 0px rgba(44, 46, 73, 0.08);
           box-shadow: 0px 9px 0px rgba(44, 46, 73, 0.08);
   border-radius: 26px 26px 26px 2px;
   border: none;
-  width: 100%;
+  width: 40%;
   height: 9em;
   padding: 2.5em 2em 2em 6em;
-}
-
-@media screen and (max-width: 950px) {
-  #sidebar {
-    display: none;
-  }
 }
 /*# sourceMappingURL=styles.css.map */
